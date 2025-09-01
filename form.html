@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    ,<style>
+        .body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            align-items:center;
+            background-color: #fffbfb;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section {
+            border: 1px solid #cc2121;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .section-title  {
+            background-color: #4CAF50;
+            padding: 10px;
+            margin-top: -30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+            border-radius: 4px;
+        }
+        .form-group  {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group input,[type="text"]
+        .form-group input,[type="email"],
+        .form-group input,[type="tel"],
+        .form-group input,[type=password],
+        .form-group textarea
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-groupinput[type="date"]
+        .form-group input[type="time"] {
+            width: auto;
+        }
+        .form-group input[type=radio] 
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group.inline-radio-group,
+        .form-group.inline-checkbox-group {
+            display: flex;
+            gap: 20px;
+        }
+        .form-groupinput[type="file"] {
+            padding: 3px;
+            border: none;
+        }
+        .form-group.two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group.two-column .form-group {
+            margin-bottom: 0;
+        }
+        .form-group.two-column>div {
+            display: flex;
+            flex-direction: column;
+        }
+        .color-picker {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .color-picker input[type="color"] {
+            width: 50px;
+            height: 30px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+        .color-picker input[type="color"]::-webkit-color-swatch-wrapper {
+            border-radius: 50%;
+            border: 1px solid #ccc;
+        }
+        .slider-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .slider-group input[type="range"] {
+            flex-grow: 1;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .button-group button {
+            padding: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button-group.register{
+            background-color: #4CAF50;
+        }
+        .button-group.clear{
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Information Form</h1>
+        <p>Please fill out this form to provide your contact details and interests.</p>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="full-name">First name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <br>
+                    <label for="full-name">last name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </p>
+                <p>
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" id="birth-date" name="birth-date">
+                </p>
+                <p>
+                    <label for="age">age</label>
+                    <input type="age" id="age" name="age">
+                </p>
+                <p>
+                    <label for="gender">gender:</label>
+                    <br>
+                    <input type="radio" id="male" name="gender"value="male">
+                    <label for="male">male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender"value="female">
+                    <label for="female">female</label>
+                </p>
+                <p>
+                    <label for="profile-photo">profile-photo</label>
+                    <input type="file" id="profile-photo" name="profile-photo">
+                </p>
+         </fieldset>
+            <fieldset>
+                <legend>Contact & Adress Information</legend>
+                <p>
+                    <label for="email">Email Adress:</label>
+                    <input type="email" id="email" name="email">
+                    <lable for="phone">Phone Number:</lable>
+                    <input type="phone" id="phone number" name="phone number">
+                </p>
+                <p>
+                    <lable for="Personal Website">Personal Website:</lable>
+                    <input type="personal website" id="Personal Website" name="personalwebsite">
+                   <br>
+                    <lable for="Street Address">Street Address:</lable>
+                    <br>
+                    <input type="text" id="Street Address" name="Street Address">
+                     <br>
+                    <lable for="City">City:</lable>
+                    <br>
+                    <input type="text" id="City" name="City">
+                     <br>
+                    <lable for="country">country:</lable>
+                    <br>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="canada">Dubai</option>
+                        <option value="uk">Kenya</option>
+                        <option value="australia">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <lable for="zip code">zip/Postal code:</lable>
+                    <br>
+                    <input type="text" id="zip code" name="zip code">
+                    <br>
+                    <label for="prefferredd-contact-time">Prefferred contact time:</label>
+                    <br>
+                    <input type="time" id="prefferredd-contact-time" name="prefferredd-contact-time">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences & Interests</legend>
+                <div>
+                    <labe for="favorite-color">Favorite-color:</labe>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    <br>
+                    <lable for="color-range">Color-range:</lable>
+                    <input type="range" id="color-range" name="color-range" min="0" max="100" value="50">
+                    <br>
+                    <lable for="birthday-month">Birthday Month:</lable>
+                    <br>
+                    <input type="date" id="birthday-month" name="birthday">
+                    <br>
+                    <lable for="availabe-week">Available Weeke:</lable>
+                    <br>
+                    <input type="week" id="availabe-week" name="availabe-week">
+                    <br>
+                    <lable for="search keyword">Search keyword:</lable>
+                    <br>
+                    <input type="search" id="search keyword" name="search keyword">
+                    <br>
+                    <lable type="interests">Interests (Select all that apply):</lable>
+                    <br>   
+                    <input type="radio" id="technology" name="interests"value="technology">
+                    <label for="technology">Technology</label>
+                    <br>
+                    <input type="radio" id="sports" name="interests"value="sports"> 
+                    <label for="sports">Sports</label>
+                    <br>
+                    <input type="radio" id="music" name="interests"value="music">
+                    <label for="music">Music</label>    
+                    <br>
+                    <input type="radio" id="art" name="interests"value="art">
+                    <label for="art">Cooking</label>
+                    <br>
+                    <input type="radio" id="travel" name="interests"value="travel">
+                    <label for="travel">Travel</label>
+                    <br>
+                    <input type="radio" id="reading" name="interests"value="reading">
+                    <label for="reading">Reading</label>
+                    <br>
+                    <lable for="education-level">Education Level:</lable>
+                    <br>
+                    <select id="education-level" name="education-level">
+                        <option value="high-school">High School</option>
+                        <option value="bachelor's">Bachelor's Degree</option>
+                        <option value="master's">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>    
+                    <lable for="create password">Create Password:</lable>
+                    <br>    
+                    <input type="password" id="create password" name="create password">
+                    <br>
+                    <lable for="confirm password">Confirm Password:</lable>
+                    <br>
+                    <input type="password" id="confirm password" name="confirm password">
+                    <br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Feedback & Additional Information</legend>
+                <p>
+                    <label for="about-yourself">Tell Us About Yourself:</label>
+                    <br>
+                    <textarea id="about-yourself" name="about-yourself" rows="4" cols="50" placeholder="Write a brife discription of Yourself..."></textarea>
+                </p>
+                <p>
+                    <lable for="suggestion for improvement">Suggestions for Improvement:</lable>
+                    <br>    
+                    <textarea id="suggestion for improvement" name="suggestion for improvement" rows="4" cols="50" placeholder="Any Feedback or suggestions..."></textarea>
+                    <br>
+                    <lable for="registration-date & time">Registration Date & Time:</lable>
+                    <br>
+                    <input type="datetime-local" id="registration-date & time" name="registration-date & time">
+                    <br>
+                    <lable for="how did you hear about us?">How did you hear about us?</lable>
+                    <br>
+                    <select id="how did you hear about us?" name="how did you hear about us?">
+                        <option value="selection">--Select an option--</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="friend-family">Friend/Family</option>
+                        <option value="search-engine">Search Engine</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe to newsletter">
+                    <label for="subscribe">Subscribe to our newsletter</label>
+                    <br>
+                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                    <label for="agree-terms">I agree to the terms and conditions</label>
+                    <br>
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                    <label for="privacy-policy">I agree to the privacy policy</label>
+                </p>
+            </fieldset>
+            <button type="register">Register</button>
+            <button type="clear form">Clear form</button>
+        </form>
+    </main>
+</body>
+</html>
