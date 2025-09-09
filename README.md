@@ -1,10 +1,10 @@
 Project Title
 # registration form & contact information
 
-Project overview 
+# Project overview 
 This form is ment to collect infomation.The form implies the semantic html practice,proper documentation and clear documentation.
 
-Purpose of the form 
+# Purpose of the form 
 The purpose of the form
 1 Is to collect information of people (email,phone number,gender , contact details)
 2 Recorde educational background and eperience level
