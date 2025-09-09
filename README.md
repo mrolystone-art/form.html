@@ -1,5 +1,5 @@
-Project Title
-# registration form & contact information
+# Project Title
+ Registration form & contact information
 
 # Project overview 
 This form is ment to collect infomation.The form implies the semantic html practice,proper documentation and clear documentation.
